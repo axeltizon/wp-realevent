@@ -23,12 +23,15 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<div class="site-inner">
+	<div class="wrapper toggle">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
-		<header id="masthead" class="site-header" role="banner">
+		<div id="masthead" class="site-header side-nav" role="banner">
 			<div class="site-header-main">
-				<div class="site-branding">
+				<div class="side-menu-toggle">
+					<span></span>
+				</div>
+				<div class="site-branding side-nav-logo">
 					<?php twentysixteen_the_custom_logo(); ?>
 
 					<?php if ( is_front_page() && is_home() ) : ?>
@@ -46,7 +49,7 @@
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
 
-					<div id="site-header-menu" class="site-header-menu">
+					<div id="site-header-menu" class="site-header-menu side-nav-menu">
 						<?php if ( has_nav_menu( 'primary' ) ) : ?>
 							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 								<?php
@@ -94,6 +97,6 @@
 					</a>
 				</div><!-- .header-image -->
 			<?php endif; // End header image check. ?>
-		</header><!-- .site-header -->
+		</div><!-- .site-header -->
 
-		<div id="content" class="site-content">
+		<div id="content" class="site-content container-fluid">

@@ -1,0 +1,51 @@
+#page {
+  padding: 0;
+  margin: 0;
+}
+#page .wrapper.toggle {
+  padding-left: 250px;
+}
+.side-nav {
+  padding: 0;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.side-nav .side-menu-toggle {
+  background: #1b1b1b;
+  position: absolute;
+  top: 0;
+  right: -40px;
+  height: 50px;
+  width: 47px;
+  z-index: 1000;
+  padding: 10px;
+}
+.side-nav .side-menu-toggle span {
+  background-color: #ffffff;
+  content: "";
+  height: 5px;
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+.side-nav .side-nav-menu {
+  width: 100%;
+}
+.side-nav .side-nav-menu .main-navigation {
+  margin: 0;
+}
+.side-nav .side-nav-menu .main-navigation ul li {
+  float: none;
+}
+.side-nav .side-nav-menu .main-navigation ul li.current-menu-item a {
+  background-color: #1baae2;
+  color: #ffffff;
+}
+.side-nav .side-nav-menu .main-navigation ul li a {
+  color: #787878;
+  padding: 20px;
+  padding-left: 30px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,54 @@
+.side-nav{
+	padding: 0;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .side-menu-toggle{
+    	background: @color-brown;
+	    position: absolute;
+	    top: 0;
+	    right: -40px;
+	    height: 50px;
+	    width: 47px;
+	    z-index: 1000;
+        padding: 10px;
+    	span{
+		    background-color: @color-white;
+		    content: "";
+		    height: 5px;
+		    width: 100%;
+		    display: block;
+		    opacity: 1;
+		    &:before{
+		    	
+    		}
+    	}
+    }
+    .side-nav-logo{
+    	
+    }
+    .side-nav-menu{
+    	width: 100%;
+    	.main-navigation{
+		   	 margin: 0;
+    		ul{
+    			li{
+    				float: none;
+    				&.current-menu-item{
+    					a{
+    						background-color: @color-blue;
+    						color: @color-white;
+    					}
+    				}
+    				a{
+    					color: @color-grey;
+					    padding: 20px;
+					    padding-left: 30px;
+				        text-transform: uppercase;
+    				}
+    			}
+    		}
+    	}
+    }
+}

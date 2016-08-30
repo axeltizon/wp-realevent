@@ -264,9 +264,18 @@ function twentysixteen_scripts() {
 	wp_enqueue_style( 'twentysixteen-ie7', get_template_directory_uri() . '/css/ie7.css', array( 'twentysixteen-style' ), '20160816' );
 	wp_style_add_data( 'twentysixteen-ie7', 'conditional', 'lt IE 8' );
 
+	// Load the bootstrap stylesheet
+	wp_enqueue_style( 'twentysixteen-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( 'twentysixteen-style' ), '20160816' );
+
+	// Load the main stylesheet
+	wp_enqueue_style( 'twentysixteen-main', get_template_directory_uri() . '/css/main.css', array( 'twentysixteen-style' ), '20160816' );
+
 	// Load the html5 shiv.
 	wp_enqueue_script( 'twentysixteen-html5', get_template_directory_uri() . '/js/html5.js', array(), '3.7.3' );
 	wp_script_add_data( 'twentysixteen-html5', 'conditional', 'lt IE 9' );
+
+	// Load the bootstrap js
+	wp_enqueue_script( 'twentysixteen-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.7' );
 
 	wp_enqueue_script( 'twentysixteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20160816', true );
 
@@ -294,7 +303,7 @@ add_action( 'wp_enqueue_scripts', 'twentysixteen_scripts' );
  *
  * @param array $classes Classes for the body element.
  * @return array (Maybe) filtered body classes.
- */
+ 
 function twentysixteen_body_classes( $classes ) {
 	// Adds a class of custom-background-image to sites with a custom background image.
 	if ( get_background_image() ) {
