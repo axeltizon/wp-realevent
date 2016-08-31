@@ -25,10 +25,9 @@
 <div id="page" class="site">
 	<div class="wrapper toggle">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
-
 		<div id="masthead" class="site-header side-nav" role="banner">
 			<div class="site-header-main" id="side-bar-menu">
-				<div class="side-menu-toggle">
+				<div class="side-menu-toggle" id="SideToggle">
 					<span></span>
 				</div>
 				<div class="site-branding side-nav-logo">
@@ -99,4 +98,4 @@
 			<?php endif; // End header image check. ?>
 		</div><!-- .site-header -->
 
-		<div id="content" class="site-content container-fluid">
+		<div id="content" class="site-content container-fluid ">

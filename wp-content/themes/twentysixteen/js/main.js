@@ -8,10 +8,9 @@
      // The DOM is ready!
     // Sidebar Toggle 
     	var sideBarMenu = function(){
-    		console.log('axel');
     		$('.wrapper').toggleClass('toggle');
     	}
-    	 $('#side-bar-menu').on('click', sideBarMenu );
+    	 $('#SideToggle').on('click', sideBarMenu );
    });
 
    // The rest of the code goes here!

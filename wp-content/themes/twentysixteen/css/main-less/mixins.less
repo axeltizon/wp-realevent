@@ -4,7 +4,14 @@
     -o-transition: @value;
     transition: @value;
 }
-.absolute-center(){
+
+.transition-delay(@value){
+	-webkit-transition-delay: @value;
+	-moz-transition-delay: @value;
+	-o-transition-delay: @value;
+    transition-delay: @value;
+}
+.absolute-center{
 	position: absolute;
 	top: 0;
     bottom: 0;
