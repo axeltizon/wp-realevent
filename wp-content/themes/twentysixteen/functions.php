@@ -270,6 +270,12 @@ function twentysixteen_scripts() {
 	// Load the main stylesheet
 	wp_enqueue_style( 'twentysixteen-main', get_template_directory_uri() . '/css/main.css', array( 'twentysixteen-style' ), '20160816' );
 
+	// Load the jquery.
+	wp_enqueue_script( 'twentysixteen-jquery', get_template_directory_uri() . '/js/jquery.js', array(), '3.7.3' );
+
+	// Load the jquery.
+	wp_enqueue_script( 'twentysixteen-main', get_template_directory_uri() . '/js/main.js', array(), '3.7.3' );
+
 	// Load the html5 shiv.
 	wp_enqueue_script( 'twentysixteen-html5', get_template_directory_uri() . '/js/html5.js', array(), '3.7.3' );
 	wp_script_add_data( 'twentysixteen-html5', 'conditional', 'lt IE 9' );

@@ -10,23 +10,40 @@
 	    top: 0;
 	    right: -40px;
 	    height: 50px;
-	    width: 47px;
-	    z-index: 1000;
-        padding: 10px;
+	    width: 50px;
+	    z-index: 1000;	
+        cursor: pointer;
     	span{
 		    background-color: @color-white;
 		    content: "";
 		    height: 5px;
-		    width: 100%;
+	       	width: 35px;
 		    display: block;
 		    opacity: 1;
-		    &:before{
-		    	
+		    .absolute-center;
+		    &:before,
+		    &:after{
+	    	 	background-color: @color-white;
+			    content: "";
+			    height: 5px;
+			    width: 100%;
+			    display: block;
+			    opacity: 1;
+		        position: absolute;
+			    left: 0;
+			    right: 0;
+			    margin: auto;
+    		}
+    		&:before{
+			    top: -10px;
+    		}
+    		&:after{
+    			bottom: -10px;
     		}
     	}
     }
     .side-nav-logo{
-    	
+
     }
     .side-nav-menu{
     	width: 100%;

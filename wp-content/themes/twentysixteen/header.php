@@ -27,7 +27,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
 		<div id="masthead" class="site-header side-nav" role="banner">
-			<div class="site-header-main">
+			<div class="site-header-main" id="side-bar-menu">
 				<div class="side-menu-toggle">
 					<span></span>
 				</div>
